@@ -26,6 +26,7 @@
 		19CE21DB2CDBDE2E005C66F7 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CE21C52CDBCAE2005C66F7 /* View+Extensions.swift */; };
 		19CE21DC2CDBDE37005C66F7 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CE21C42CDBCAD5005C66F7 /* String+Extensions.swift */; };
 		19CE21EA2CDC0E9B005C66F7 /* Preview Content in Resources */ = {isa = PBXBuildFile; fileRef = 19CE21E92CDC0E92005C66F7 /* Preview Content */; };
+		19CE21F42CDC127F005C66F7 /* example.png in Resources */ = {isa = PBXBuildFile; fileRef = 19CE21F32CDC127F005C66F7 /* example.png */; };
 		19E4DA2A2CDB97EB00BCA587 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 19E4DA292CDB97E500BCA587 /* README.md */; };
 		19E4DA2D2CDB981300BCA587 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 19E4DA2C2CDB980E00BCA587 /* .gitignore */; };
 /* End PBXBuildFile section */
@@ -66,6 +67,7 @@
 		19CE21C42CDBCAD5005C66F7 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		19CE21C52CDBCAE2005C66F7 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		19CE21E92CDC0E92005C66F7 /* Preview Content */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Preview Content"; sourceTree = "<group>"; };
+		19CE21F32CDC127F005C66F7 /* example.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = example.png; sourceTree = "<group>"; };
 		19E4D9FA2CDB886200BCA587 /* MarkdownNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarkdownNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19E4DA0B2CDB886400BCA587 /* MarkdownNotesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarkdownNotesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		19E4DA152CDB886400BCA587 /* MarkdownNotesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarkdownNotesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -241,6 +243,7 @@
 		19E4DA352CDB989F00BCA587 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				19CE21F32CDC127F005C66F7 /* example.png */,
 				19CE21E92CDC0E92005C66F7 /* Preview Content */,
 				19CE21B62CDBC7AE005C66F7 /* Localizable.strings */,
 				19CE21A42CDB9AA0005C66F7 /* Assets.xcassets */,
@@ -374,6 +377,7 @@
 				19CE21B72CDBC7BC005C66F7 /* Localizable.strings in Resources */,
 				19E4DA2D2CDB981300BCA587 /* .gitignore in Resources */,
 				19E4DA2A2CDB97EB00BCA587 /* README.md in Resources */,
+				19CE21F42CDC127F005C66F7 /* example.png in Resources */,
 				19CE21AA2CDB9AA0005C66F7 /* Preview Assets.xcassets in Resources */,
 				19CE21AB2CDB9AA0005C66F7 /* Assets.xcassets in Resources */,
 			);
