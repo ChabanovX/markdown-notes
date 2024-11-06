@@ -3,7 +3,7 @@
 build/
 DerivedData/
 xcuserdata/
-*.xcodeproj/*
+*.xcodeproj
 *.xcuserstate
 *.pbxuser
 !default.pbxuser
