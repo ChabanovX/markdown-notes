@@ -3,6 +3,8 @@
 build/
 DerivedData/
 xcuserdata/
+MarkdownNotesTests/
+MarkdownNotesUITests/
 *.xcodeproj
 *.xcuserstate
 *.pbxuser
