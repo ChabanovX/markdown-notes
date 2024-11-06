@@ -11,6 +11,20 @@
 		19CE21AA2CDB9AA0005C66F7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19CE21A22CDB9AA0005C66F7 /* Preview Assets.xcassets */; };
 		19CE21AB2CDB9AA0005C66F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19CE21A42CDB9AA0005C66F7 /* Assets.xcassets */; };
 		19CE21B72CDBC7BC005C66F7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 19CE21B62CDBC7AE005C66F7 /* Localizable.strings */; };
+		19CE21CC2CDBD60A005C66F7 /* SidebarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CE21C02CDBCA8F005C66F7 /* SidebarViewModel.swift */; };
+		19CE21CD2CDBD60F005C66F7 /* NoteDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CE21C12CDBCA9B005C66F7 /* NoteDetailViewModel.swift */; };
+		19CE21CE2CDBD627005C66F7 /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CE21BE2CDBCA60005C66F7 /* SidebarView.swift */; };
+		19CE21CF2CDBD635005C66F7 /* NoteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CE21BB2CDBCA2D005C66F7 /* NoteDetailView.swift */; };
+		19CE21D02CDBD714005C66F7 /* NoteRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CE21BF2CDBCA6B005C66F7 /* NoteRowView.swift */; };
+		19CE21D12CDBD74C005C66F7 /* MarkdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CE21BC2CDBCA44005C66F7 /* MarkdownView.swift */; };
+		19CE21D22CDBD751005C66F7 /* MarkdownEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CE21BD2CDBCA51005C66F7 /* MarkdownEditorView.swift */; };
+		19CE21D62CDBDD8F005C66F7 /* Down in Frameworks */ = {isa = PBXBuildFile; productRef = 19CE21D52CDBDD8F005C66F7 /* Down */; };
+		19CE21D72CDBDDB8005C66F7 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E4DA2B2CDB980900BCA587 /* Note.swift */; };
+		19CE21D82CDBDDD7005C66F7 /* IconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CE21B92CDBCA15005C66F7 /* IconView.swift */; };
+		19CE21D92CDBDDFD005C66F7 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CE21C22CDBCAAF005C66F7 /* DataService.swift */; };
+		19CE21DA2CDBDE2A005C66F7 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CE21C32CDBCABC005C66F7 /* Color+Extensions.swift */; };
+		19CE21DB2CDBDE2E005C66F7 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CE21C52CDBCAE2005C66F7 /* View+Extensions.swift */; };
+		19CE21DC2CDBDE37005C66F7 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CE21C42CDBCAD5005C66F7 /* String+Extensions.swift */; };
 		19E4DA2A2CDB97EB00BCA587 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 19E4DA292CDB97E500BCA587 /* README.md */; };
 		19E4DA2D2CDB981300BCA587 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 19E4DA2C2CDB980E00BCA587 /* .gitignore */; };
 /* End PBXBuildFile section */
@@ -39,7 +53,7 @@
 		19CE21A72CDB9AA0005C66F7 /* MarkdownNotesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownNotesApp.swift; sourceTree = "<group>"; };
 		19CE21B62CDBC7AE005C66F7 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		19CE21B92CDBCA15005C66F7 /* IconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconView.swift; sourceTree = "<group>"; };
-		19CE21BB2CDBCA2D005C66F7 /* NewDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDetailView.swift; sourceTree = "<group>"; };
+		19CE21BB2CDBCA2D005C66F7 /* NoteDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailView.swift; sourceTree = "<group>"; };
 		19CE21BC2CDBCA44005C66F7 /* MarkdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownView.swift; sourceTree = "<group>"; };
 		19CE21BD2CDBCA51005C66F7 /* MarkdownEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownEditorView.swift; sourceTree = "<group>"; };
 		19CE21BE2CDBCA60005C66F7 /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
@@ -76,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19CE21D62CDBDD8F005C66F7 /* Down in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,7 +125,7 @@
 			children = (
 				19CE21BD2CDBCA51005C66F7 /* MarkdownEditorView.swift */,
 				19CE21BC2CDBCA44005C66F7 /* MarkdownView.swift */,
-				19CE21BB2CDBCA2D005C66F7 /* NewDetailView.swift */,
+				19CE21BB2CDBCA2D005C66F7 /* NoteDetailView.swift */,
 			);
 			path = NoteDetail;
 			sourceTree = "<group>";
@@ -131,6 +146,13 @@
 			path = Configurations;
 			sourceTree = "<group>";
 		};
+		19CE21D42CDBDD8F005C66F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		19E4D9F12CDB886200BCA587 = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +170,7 @@
 				19E4D9FB2CDB886200BCA587 /* Products */,
 				19E4DA292CDB97E500BCA587 /* README.md */,
 				19CE21A72CDB9AA0005C66F7 /* MarkdownNotesApp.swift */,
+				19CE21D42CDBDD8F005C66F7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -240,6 +263,7 @@
 			);
 			name = MarkdownNotes;
 			packageProductDependencies = (
+				19CE21D52CDBDD8F005C66F7 /* Down */,
 			);
 			productName = MarkdownNotes;
 			productReference = 19E4D9FA2CDB886200BCA587 /* MarkdownNotes.app */;
@@ -323,6 +347,9 @@
 			);
 			mainGroup = 19E4D9F12CDB886200BCA587;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				19CE21D32CDBDC0D005C66F7 /* XCRemoteSwiftPackageReference "Down" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 19E4D9FB2CDB886200BCA587 /* Products */;
 			projectDirPath = "";
@@ -369,7 +396,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19CE21D22CDBD751005C66F7 /* MarkdownEditorView.swift in Sources */,
 				19CE21A92CDB9AA0005C66F7 /* MarkdownNotesApp.swift in Sources */,
+				19CE21CF2CDBD635005C66F7 /* NoteDetailView.swift in Sources */,
+				19CE21CE2CDBD627005C66F7 /* SidebarView.swift in Sources */,
+				19CE21D02CDBD714005C66F7 /* NoteRowView.swift in Sources */,
+				19CE21D92CDBDDFD005C66F7 /* DataService.swift in Sources */,
+				19CE21D82CDBDDD7005C66F7 /* IconView.swift in Sources */,
+				19CE21D72CDBDDB8005C66F7 /* Note.swift in Sources */,
+				19CE21DC2CDBDE37005C66F7 /* String+Extensions.swift in Sources */,
+				19CE21CC2CDBD60A005C66F7 /* SidebarViewModel.swift in Sources */,
+				19CE21DB2CDBDE2E005C66F7 /* View+Extensions.swift in Sources */,
+				19CE21D12CDBD74C005C66F7 /* MarkdownView.swift in Sources */,
+				19CE21CD2CDBD60F005C66F7 /* NoteDetailViewModel.swift in Sources */,
+				19CE21DA2CDBDE2A005C66F7 /* Color+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -526,7 +566,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = MarkdownNotes/MarkdownNotes.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Configurations/MarkdownNotes.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -553,7 +593,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = MarkdownNotes/MarkdownNotes.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Configurations/MarkdownNotes.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -683,6 +723,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		19CE21D32CDBDC0D005C66F7 /* XCRemoteSwiftPackageReference "Down" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/iwasrobbed/Down.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		19CE21D52CDBDD8F005C66F7 /* Down */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 19CE21D32CDBDC0D005C66F7 /* XCRemoteSwiftPackageReference "Down" */;
+			productName = Down;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 19E4D9F22CDB886200BCA587 /* Project object */;
 }
