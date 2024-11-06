@@ -2,7 +2,7 @@
 
 MarkdownNotes is a macOS desktop application designed to help users quickly take and manage notes using Markdown. Inspired by Telegram's clean and minimalist UI, MarkdownNotes offers an intuitive interface with a sidebar listing all your notes, easy navigation, and seamless Markdown editing and previewing capabilities.
 
-![MarkdownNotes Screenshot](./Resources/Screenshot.png)
+
 
 ## Features
 
