@@ -2,6 +2,10 @@
 #
 build/
 DerivedData/
+xcuserdata/
+*.xcodeproj/project.xcworkspace/
+*.xcodeproj/xcuserdata/
+*.xcuserstate
 *.pbxuser
 !default.pbxuser
 *.mode1v3
@@ -13,7 +17,6 @@ DerivedData/
 xcuserdata/
 *.xccheckout
 *.moved-aside
-*.xcuserstate
 
 # Swift Package Manager
 #
