@@ -5,7 +5,6 @@ DerivedData/
 xcuserdata/
 MarkdownNotesTests/
 MarkdownNotesUITests/
-*.xcodeproj
 *.xcuserstate
 *.pbxuser
 !default.pbxuser

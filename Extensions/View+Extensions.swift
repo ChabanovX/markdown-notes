@@ -6,9 +6,10 @@
 //
 
 import SwiftUI
+import AppKit
 
 extension View {
     func applyCustomBackground() -> some View {
-        self.background(Color.systemGray6)
+        self.background(Color(nsColor: .controlBackgroundColor))  // Use a similar NSColor
     }
 }

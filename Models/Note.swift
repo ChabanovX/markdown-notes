@@ -1,5 +1,5 @@
 //
-//  Untitled.swift
+//  Note.swift
 //  MarkdownNotes
 //
 //  Created by Иван Чабанов on 06/11/2024.
@@ -7,6 +7,7 @@
 
 import Foundation
 import SwiftUI
+import AppKit
 
 struct Note: Identifiable, Codable {
     let id: UUID
@@ -34,6 +35,16 @@ struct Note: Identifiable, Codable {
     }
 }
 
+extension Note: Hashable {
+    static func == (lhs: Note, rhs: Note) -> Bool {
+        return lhs.id == rhs.id
+    }
+
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
+}
+
 extension Color: Codable {
     enum CodingKeys: String, CodingKey {
         case red
@@ -44,12 +55,19 @@ extension Color: Codable {
 
     public func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
-        let uiColor = UIColor(self)
+        let nsColor = NSColor(self)
+        guard let rgbColor = nsColor.usingColorSpace(.deviceRGB) else {
+            throw EncodingError.invalidValue(
+                self,
+                EncodingError.Context(codingPath: encoder.codingPath,
+                                      debugDescription: "Unable to convert Color to deviceRGB color space.")
+            )
+        }
         var red: CGFloat = 0
         var green: CGFloat = 0
         var blue: CGFloat = 0
         var opacity: CGFloat = 0
-        uiColor.getRed(&red, green: &green, blue: &blue, alpha: &opacity)
+        rgbColor.getRed(&red, green: &green, blue: &blue, alpha: &opacity)
         try container.encode(red, forKey: .red)
         try container.encode(green, forKey: .green)
         try container.encode(blue, forKey: .blue)
