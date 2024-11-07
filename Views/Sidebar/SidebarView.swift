@@ -24,12 +24,14 @@ struct SidebarView: View {
                 Button(action: viewModel.createNewNote) {
                     Image(systemName: "plus")
                 }
+                .keyboardShortcut("n", modifiers: [.command])
                 Button(action: {
                     showDeleteConfirmation = true
                 }) {
                     Image(systemName: "trash")
                 }
                 .disabled(viewModel.selectedNote == nil)
+                .keyboardShortcut(.delete, modifiers: [])
             }
         }
         .alert(isPresented: $showDeleteConfirmation) {
