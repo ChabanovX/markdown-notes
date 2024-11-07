@@ -13,8 +13,16 @@ struct NoteDetailView: View {
     var body: some View {
         VStack {
             if viewModel.isEditing {
+                TextField("Title", text: $viewModel.title)
+                    .font(.title)
+                    .padding()
+                
                 MarkdownEditorView(markdownText: $viewModel.markdownText)
             } else {
+                Text(viewModel.title)
+                    .font(.title)
+                    .padding()
+                
                 MarkdownView(markdownText: viewModel.markdownText)
             }
         }

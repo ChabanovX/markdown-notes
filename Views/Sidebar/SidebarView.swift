@@ -14,9 +14,7 @@ struct SidebarView: View {
         List(selection: $viewModel.selectedNote) {
             ForEach(viewModel.filteredNotes) { note in
                 NoteRowView(note: note)
-                    .onTapGesture {
-                        viewModel.select(note: note)
-                    }
+                    .tag(note)
             }
         }
         .listStyle(SidebarListStyle())

@@ -31,6 +31,7 @@ class SidebarViewModel: ObservableObject {
         notes.append(newNote)
         selectedNote = newNote
         saveNotes()
+        filterNotes()
     }
 
     func select(note: Note) {
@@ -39,6 +40,7 @@ class SidebarViewModel: ObservableObject {
 
     func saveNotes() {
         dataService.saveNotes(notes)
+        loadNotes()
     }
 
     func filterNotes() {

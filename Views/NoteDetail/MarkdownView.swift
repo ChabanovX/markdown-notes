@@ -13,10 +13,9 @@ struct MarkdownView: View {
 
     var body: some View {
         ScrollView {
-            if let downView = try? Down(markdownString: markdownText).toAttributedString() {
-                Text(downView.string)
-                    .padding()
-                    .textSelection(.enabled)
+            if let downAttributedString = try? Down(markdownString: markdownText).toAttributedString() {
+                AttributedTextView(attributedString: downAttributedString)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
             } else {
                 Text("Invalid Markdown")
                     .foregroundColor(.red)
