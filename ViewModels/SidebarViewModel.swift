@@ -20,6 +20,30 @@ class SidebarViewModel: ObservableObject {
         self.dataService = dataService
         loadNotes()
     }
+    
+    func delete(note: Note) {
+        // Remove the note from the notes array
+        notes.removeAll { $0.id == note.id }
+        
+        // Update the filtered notes
+        filterNotes()
+        
+        // Save the updated notes array
+        saveNotes()
+        
+        // Reset the selected note if it was deleted
+        if selectedNote == note {
+            selectedNote = nil
+        }
+    }
+    
+    func update(note: Note) {
+        if let index = notes.firstIndex(where: { $0.id == note.id}) {
+            notes[index] = note
+            saveNotes()
+            filterNotes()
+        }
+    }
 
     func loadNotes() {
         self.notes = dataService.loadNotes()

@@ -14,22 +14,25 @@ class NoteDetailViewModel: ObservableObject {
     @Published var isEditing: Bool = false
 
     private var note: Note
-    private let dataService: DataServiceProtocol
+    private weak var sidebarViewModel: SidebarViewModel?
 
-    init(note: Note, dataService: DataServiceProtocol = DataService.shared) {
+    init(note: Note, sidebarViewModel: SidebarViewModel) {
         self.note = note
         self.markdownText = note.content
         self.title = note.title
-        self.dataService = dataService
+        self.sidebarViewModel = sidebarViewModel
     }
 
     func toggleEditMode() {
         if isEditing {
-            // Save changes
+            // Update note
             note.title = title
             note.content = markdownText
             note.lastModified = Date()
-            dataService.saveNotes([note]) // Adjust to save all notes as needed
+            
+            // Inform SidebarViewModel
+            sidebarViewModel?.update(note: note)
+            
         }
         isEditing.toggle()
     }

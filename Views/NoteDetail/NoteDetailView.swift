@@ -9,6 +9,10 @@ import SwiftUI
 
 struct NoteDetailView: View {
     @ObservedObject var viewModel: NoteDetailViewModel
+    
+    init(viewModel: NoteDetailViewModel) {
+        self.viewModel = viewModel
+    }
 
     var body: some View {
         VStack {

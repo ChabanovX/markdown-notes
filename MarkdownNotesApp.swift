@@ -16,7 +16,10 @@ struct MarkdownNotesApp: App {
             NavigationView {
                 SidebarView(viewModel: sidebarViewModel)
                 if let selectedNote = sidebarViewModel.selectedNote {
-                    NoteDetailView(viewModel: NoteDetailViewModel(note: selectedNote))
+                    NoteDetailView(viewModel: NoteDetailViewModel(
+                        note: selectedNote,
+                        sidebarViewModel: sidebarViewModel)
+                    )
                 } else {
                     Text("Select a note")
                         .foregroundColor(.gray)
