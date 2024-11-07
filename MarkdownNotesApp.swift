@@ -22,7 +22,23 @@ struct MarkdownNotesApp: App {
                         .foregroundColor(.gray)
                 }
             }
+            .toolbar {
+                ToolbarItem(placement: .navigation) {
+                    Button(action: toggleSidebar) {
+                        Image(systemName: "sidebar.leading")
+                    }
+                }
+            }
             .environmentObject(sidebarViewModel)
         }
+        .commands {
+            SidebarCommands()
+        }
+    }
+    
+    private func toggleSidebar() {
+        #if os(macOS)
+        NSApp.keyWindow?.firstResponder?.tryToPerform(#selector(NSSplitViewController.toggleSidebar(_:)), with: nil)
+        #endif
     }
 }
